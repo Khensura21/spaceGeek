@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outerspace Viewer 🔭</title>
+</head>
+
+<body>
+    <nav>
+        <i class="fa-solid fa-shuttle-space" style="background-color: blue;"></i>
+        <ul>
+            <li><a href="../index.html">Earth</a></li>
+            <li><a href="./telescope.html">Telescope</a></li>
+            <li><a href="./spaceheroes.html">Space Heroes</a></li>
+            <li><a href="./multiverse.html">Multiverse</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Let thy form be thou telescope! Explore stars, planets, and galaxies</h1>
+        <form action="submit">
+            <legend>E.T. Object Viewer</legend>
+            <fieldset>
+                <div>
+                    <label for="name">Space Geek Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="space-object">Choose a space object:</label>
+                    <select name="space objects" id="space-object">
+                        <option value="">--Pick one--</option>
+                        <option value="sun">Sun</option>
+                        <option value="milkyway">Milky Way</option>
+                        <option value="jupiter">Jupiter</option>
+                        <option value="blackholes">Blackhole</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="space-question">Favorite outerspace topic?</label>
+                    <textarea name="question" id="space-question" placeholder="ex. I love dark matter!" cols="30" rows="10"></textarea>
+
+                </div>
+                <div>
+                    <label for="blast-off">Accept terms and conditions of blast-off? </label>
+                    <input type="checkbox" name="blast-off" id="blast-off" required>
+                </div>
+                <button>View!</button>
+            </fieldset>
+        </form>
+    </div>
+    <footer> 🪐 SpaceGeeks © 2023</footer>
+</body>
+
+</html>
