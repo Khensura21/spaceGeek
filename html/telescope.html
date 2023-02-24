@@ -4,32 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outerspace Viewer 🔭</title>
+    <title>Telescope 🔭</title>
+    <link rel="stylesheet" href="../css/telescope.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;1,500&family=Hind:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <i class="fa-solid fa-shuttle-space" style="background-color: blue;"></i>
-        <ul>
-            <li><a href="../index.html">Earth</a></li>
-            <li><a href="./telescope.html">Telescope</a></li>
-            <li><a href="./spaceheroes.html">Space Heroes</a></li>
-            <li><a href="./multiverse.html">Multiverse</a></li>
+    <div class="nav-bar">
+        <div class="logo">
+            <a class="logo-image" href="../index.html">
+                <img class="rocket-icon" src="../imgs/rocket.png" alt="">
+            </a>
+            <a id="logo-text" href="../index.html">
+                <span>SpaceGeeks</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="../index.html">Earth</a></li>
+            <li><a class="nav-link" href="./telescope.html">Telescope</a></li>
+            <li><a class="nav-link" href="./spaceheroes.html">Space Heroes</a></li>
+            <li><a class="nav-link" href="./multiverse.html">Multiverse</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="container">
-        <h1>Let thy form be thou telescope! Explore stars, planets, and galaxies</h1>
+        <h1>View stars, planets, and galaxies</h1>
         <form action="submit">
-            <legend>E.T. Object Viewer</legend>
             <fieldset>
+                <legend>E.T. Object Viewer</legend>
                 <div>
                     <label for="name">Space Geek Name:</label>
-                    <input type="text" name="name" id="name">
+                    <input class="user-input" type="text" name="name" id="name">
                 </div>
                 <div>
                     <label for="space-object">Choose a space object:</label>
-                    <select name="space objects" id="space-object">
-                        <option value="">--Pick one--</option>
+                    <select class="user-input" name="space objects" id="space-object">
+                        <option value=""></option>
                         <option value="sun">Sun</option>
                         <option value="milkyway">Milky Way</option>
                         <option value="jupiter">Jupiter</option>
@@ -41,15 +52,17 @@
                     <textarea name="question" id="space-question" placeholder="ex. I love dark matter!" cols="30" rows="10"></textarea>
 
                 </div>
-                <div>
-                    <label for="blast-off">Accept terms and conditions of blast-off? </label>
+                <div id="terms">
                     <input type="checkbox" name="blast-off" id="blast-off" required>
+                    <label for="blast-off">Accept terms and conditions of blast-off? </label>
                 </div>
-                <button>View!</button>
+                <div>
+                    <button>View</button>
+                </div>
             </fieldset>
         </form>
     </div>
-    <footer> 🪐 SpaceGeeks © 2023</footer>
+    <footer> SpaceGeeks © 2023</footer>
 </body>
 
 </html>

@@ -1,0 +1,133 @@
+body {
+    background-color: #1B1026;
+    color: white;
+    margin: 0;
+}
+
+
+/**************** Navigation bar **************/
+
+.nav-bar {
+    background-color: #261E59;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* navigation logo and text */
+
+.rocket-icon {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    margin-top: 7px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#logo-text {
+    display: block;
+    color: #BF69A1;
+    text-decoration: none;
+    padding: 16px 16px;
+    margin-left: -10px;
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 400;
+    font-size: large;
+    font-style: italic;
+}
+
+
+/* navigation links */
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #111;
+    color: #BF69A1;
+}
+
+
+/********************* Main content ************************/
+
+.container {
+    margin: auto;
+    max-width: 50%;
+}
+
+h1 {
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Expletus Sans', cursive;
+    font-style: italic;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    font-family: 'Expletus Sans', cursive;
+}
+
+.img-gallery {
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+    row-gap: 2em;
+    object-fit: cover;
+}
+
+.row-1 {
+    width: 250px;
+    height: 200px;
+    margin-right: 3ch;
+}
+
+.row-2 {
+    background-color: coral;
+    width: 250px;
+    height: 200px;
+}
+
+
+/********** Footer *********/
+
+footer {
+    background-color: #261E59;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin-top: 120px;
+}
+
+footer p {
+    font-family: 'Hind'sans-serif;
+    font-size: 15px;
+}
