@@ -127,7 +127,8 @@ footer {
     position: relative;
     width: 100%;
     padding: 10px;
-    margin-top: 120px;
+    margin-top: 185px;
+    bottom: 0;
 }
 
 footer p {
