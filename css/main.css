@@ -93,6 +93,8 @@ h1 {
 .h1-background-img {
     background-image: url(../imgs/spacetravel.gif), linear-gradient(to bottom, rgba(35, 25, 222, 0.5), rgba(220, 58, 155, 0.417));
     object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5px;
 }
 
