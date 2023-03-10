@@ -30,7 +30,7 @@
         </ul>
     </div>
     <div class="container">
-        <h1>View stars, planets, and galaxies</h1>
+        <h1 class="hover-effect">View stars, planets, and galaxies</h1>
         <form action="submit">
             <fieldset>
                 <legend>E.T. Object Viewer</legend>
@@ -64,6 +64,29 @@
         </form>
     </div>
     <footer> SpaceGeeks © 2023</footer>
+    <script>
+        //adds a new shooting start everytime user hovers over h1 element
+        function addShootingStar() {
+            const star = document.createElement('div');
+            star.classList.add('shooting-star');
+            //set the star position on the screen to a random spot
+            const x = Math.floor(Math.random() * window.innerWidth);
+            const y = Math.floor(Math.random() * window.innerHeight);
+            star.style.top = `${y}px`;
+            star.style.left = `${x}px`;
+            //add to the body element
+            document.body.appendChild(star);
+        }
+
+        //add an event listener to h1 element that calls addShootingStar
+        // function everytime a user hovers over it
+        const h1 = document.querySelector('h1');
+        h1.addEventListener('mouseenter', () => {
+            for (let i = 0; i < 150; i++) {
+                addShootingStar();
+            }
+        })
+    </script>
 </body>
 
 </html>
