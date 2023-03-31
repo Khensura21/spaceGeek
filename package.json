@@ -1,0 +1,20 @@
+{
+    "type": "module",
+    "name": "spacegeek",
+    "version": "0.1.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "space",
+        "javascript",
+        "nasa"
+    ],
+    "author": "Khensu-Ra",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.2.0"
+    }
+}
